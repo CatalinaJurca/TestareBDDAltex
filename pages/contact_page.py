@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from browser import Browser
 
 class Contact_Page(Browser):
-    NAME_CONTACT_FORM= (By.NAME, 'fullName')
+    NAME_CONTACT_FORM= (By.CSS_SELECTOR, "input[name='fullName']")
     EMAIL_CONTACT_FORM=(By.ID, "contact_email")
 
     def contact_form(self):
